@@ -4432,6 +4432,18 @@ textarea.form-control-lg {
   overflow-y: visible;
 }
 
+.icon-contact {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: #1a45bc;
+    color: #fff;
+    border-radius: 100%
+}
+
 .navbar-light .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
 }
