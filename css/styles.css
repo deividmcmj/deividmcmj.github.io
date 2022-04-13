@@ -96,6 +96,10 @@ hr {
   opacity: 0.25;
 }
 
+#en{
+  display: none;
+}
+
 hr:not([size]) {
   height: 0.125rem;
 }

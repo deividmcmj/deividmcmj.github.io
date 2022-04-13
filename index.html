@@ -21,18 +21,28 @@
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Portfolio</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#langbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Idioma/Language
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="langbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a id="es_click" class="nav-link py-3 px-0 px-lg-3 rounded current_lang" type="button">Español</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="en_click" class="nav-link py-3 px-0 px-lg-3 rounded" type="button">English</a></li>
+                    </ul>
+                </div>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Sobre mí</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Descripción</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                        <li class="nav-item mx-0 mx-lg-1">
-                            
-                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Sobre mí</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">About me</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Descripción</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Description</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +68,8 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sobre mí</h2>
+                <h2 id="es" class="page-section-heading text-center text-uppercase text-secondary mb-0">Sobre mí</h2>
+                <h2 id="en" class="page-section-heading text-center text-uppercase text-secondary mb-0">About me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -128,7 +139,8 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Descripción general</h2>
+                <h2 id="es" class="page-section-heading text-center text-uppercase text-white">Descripción general</h2>
+                <h2 id="en" class="page-section-heading text-center text-uppercase text-white">General description</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -136,15 +148,24 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <p class="lead">Mi nombre es David Martínez. Actualmente estoy terminando un grado en diseño y desarrollo de videojuegos. Me gustan los videojuegos, la programación y la animación y me encantaría poder convertir estos hobbies en mi profesión.</p>
-                <p class="lead">Actualmente tengo un contrato de prácticas curriculares en Welme como Unity 3D Developer.</p>
+                <p id="es" class="lead">Mi nombre es David Martínez Costana. Actualmente estoy terminando un grado en diseño y desarrollo de videojuegos. Me gustan mucho los videojuegos, la programación y la animación, entre otras cosas.</p>
+                <p id="en" class="lead">My name is David Martínez Costana. I'm currently finishing a videogames design and development degree. I really enjoy videogames, programming and animation, among other things.</p>
+                <p id="es" class="lead">He desarrollado varios proyectos a lo largo de la carrera como programador, principalmente en Unity, aunque he manejado también otras herramientas como Android Studio o Phaser.</p>
+                <p id="en" class="lead">I've developed several projects throughout my career as a programmer, mostly in Unity, though I have also handled other tools such as Android Studio or Phaser.</p>
+                <p id="es" class="lead">Manejo distintos lenguajes de programación como C# y Java entre otros, así como algunas herramientas de diseño tales como Adobe Animate o 3DS Max.</p>
+                <p id="en" class="lead">I handle several languages like C# and Java, and so some design software tools like Adobe Animate o 3DS Max.</p>
+                <p id="es" class="lead">Siempre trato de mejorar en estos aspectos para poder crecer personal y profesionalmente.</p>
+                <p id="en" class="lead">I always try to improve in these ways in order to grow up personally and professionally.</p>
+                <p id="es" class="lead">Trabajé temporalmente como reponedor en Leroy Merlín y actualmente tengo un contrato de prácticas curriculares en Welme como Unity 3D Developer.</p>
+                <p id="en" class="lead">I worked temporarily as a stocker in Leroy Merlín and I currently have an internship contract as a Unity 3D Developer in Welme.</p>
             </div>
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
+                <h2 id="es" class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
+                <h2 id="en" class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -156,7 +177,8 @@
                     <div class="col-lg-4">
                         <div class="d-flex flex-column align-items-center">
                             <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
-                            <div class="text-muted">Teléfono</div>
+                            <div id="es" class="text-muted">Teléfono</div>
+                            <div id="en" class="text-muted">Phone</div>
                             <div class="lead font-weight-bold">(+34) 606 603 714</div>
                         </div>
                     </div>
@@ -178,7 +200,8 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Mis redes sociales</h4>
+                        <h4 id="es" class="text-uppercase mb-4">Mis redes sociales</h4>
+                        <h4 id="en" class="text-uppercase mb-4">My social media</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100007448027664"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/davidmcmj99/"><i class="fab fa-fw fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/davidmcmj"><i class="fab fa-fw fa-twitter"></i></a>
@@ -203,7 +226,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Formación académica</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Formación académica</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Academic training</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -213,9 +237,12 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Universidad Rey Juan Carlos (Móstoles, Madrid) - Grado en Diseño y desarrollo de videojuegos (2017-Actualidad)</p>
-                                    <p class="mb-4">Colegio ECOS, Grupo Attendis (Marbella, Málaga) - Primaria, Secundaria y Bachillerato (2005-2017)</p>
-                                    <p class="mb-4">Colegio Altaduna, Grupo Attendis (Roquetas de Mar, Almería) - Educación infantil (2003-2005)</p>
+                                    <p id="es" class="mb-4">Universidad Rey Juan Carlos (Móstoles, Madrid) - Grado en Diseño y desarrollo de videojuegos (2017-Actualidad)</p>
+                                    <p id="en" class="mb-4">Rey Juan Carlos University (Móstoles, Madrid) - Videogames design and development degree (2017-Present)</p>
+                                    <p id="es" class="mb-4">Colegio ECOS, Grupo Attendis (Marbella, Málaga) - Educación Primaria, Secundaria y Bachillerato (2005-2017)</p>
+                                    <p id="en" class="mb-4">Colegio ECOS, Grupo Attendis (Marbella, Málaga) - Primary, Secondary and High School Education (2005-2017)</p>
+                                    <p id="es" class="mb-4">Colegio Altaduna, Grupo Attendis (Roquetas de Mar, Almería) - Educación infantil (2003-2005)</p>
+                                    <p id="en" class="mb-4">Colegio Altaduna, Grupo Attendis (Roquetas de Mar, Almería) - Pre-school Education (2003-2005)</p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +260,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Idiomas</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Idiomas</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Languages</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -243,9 +271,12 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Español - Nativo</p>
-                                    <p class="mb-4">Inglés - B2, Intermedio superior (Certificado oficial obtenido en 2021)</p>
-                                    <p class="mb-4">Alemán - Principiante (Sin certificado oficial)</p>
+                                    <p id="es" class="mb-4">Español - Nativo</p>
+                                    <p id="en" class="mb-4">Spanish - Native</p>
+                                    <p id="es" class="mb-4">Inglés - B2, Intermedio superior (Certificado oficial obtenido en 2021)</p>
+                                    <p id="en" class="mb-4">English - B2, Upper intermediate (Oficial certificate achieved in 2021)</p>
+                                    <p id="es" class="mb-4">Alemán - Principiante (Sin certificado oficial)</p>
+                                    <p id="en" class="mb-4">German - Starter (Without oficial certificate)</p>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +294,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Proyectos</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Proyectos</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Projects</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -273,12 +305,18 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">HERRAMIENTA DE VISUALIZACIÓN DE ALGORITMOS DE RAMIFICACIÓN Y PODA. Herramienta de Unity para el Trabajo de Fin de Grado. Aún en desarrollo</p>
-                                    <p class="mb-4">BATHPOCALYPSE. Primer videojuego multijugador desarrollado en Unity. <a href="https://centauri-games.itch.io/bathpocalypse">Enlace para probarlo</a></p>
-                                    <p class="mb-4">SAVE CRYPTAR. Segundo videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=ZJXXxxbih18">Vídeo de demostración</a></p>
-                                    <p class="mb-4">ECLIPSE. Primer videojuego desarrollado en Phaser. <a href="https://centauri-games.itch.io/eclipse">Enlace para probarlo</a></p>
-                                    <p class="mb-4">EXTREME GAME QUIZ. Primer videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ">Vídeo de demostración</a></p>
-                                    <p class="mb-4">SPIKAR. Personaje modelado, texturizado y animado en 3DS Max. <a href="https://www.youtube.com/watch?v=MofWF82tcSg">Vídeo de demostración</a></p>
+                                    <p id="es" class="mb-4">HERRAMIENTA DE VISUALIZACIÓN DE ALGORITMOS DE RAMIFICACIÓN Y PODA. Herramienta de Unity para el Trabajo de Fin de Grado. Aún en desarrollo</p>
+                                    <p id="en" class="mb-4">BRANCH AND POUND ALGORITHMS DISPLAY SOFTWARE TOOL. Unity software tool for the Final Degree Project. Currently in development</p>
+                                    <p id="es" class="mb-4">BATHPOCALYPSE. Primer videojuego multijugador desarrollado en Unity. <a href="https://centauri-games.itch.io/bathpocalypse">Enlace para probarlo</a></p>
+                                    <p id="en" class="mb-4">BATHPOCALYPSE. First multiplayer videogame developed in Unity. <a href="https://centauri-games.itch.io/bathpocalypse">Link to try it</a></p>
+                                    <p id="es" class="mb-4">SAVE CRYPTAR. Segundo videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=ZJXXxxbih18">Vídeo de demostración</a></p>
+                                    <p id="en" class="mb-4">SAVE CRYPTAR. Second videogame developed in Android Studio. <a href="https://www.youtube.com/watch?v=ZJXXxxbih18">Demonstration video</a></p>
+                                    <p id="es" class="mb-4">ECLIPSE. Primer videojuego desarrollado en Phaser. <a href="https://centauri-games.itch.io/eclipse">Enlace para probarlo</a></p>
+                                    <p id="en" class="mb-4">ECLIPSE. First videogame developed in Phaser. <a href="https://centauri-games.itch.io/eclipse">Link to try it</a></p>
+                                    <p id="es" class="mb-4">EXTREME GAME QUIZ. Primer videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ">Vídeo de demostración</a></p>
+                                    <p id="en" class="mb-4">EXTREME GAME QUIZ. First videogame developed in Android Studio. <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ">Demonstration video</a></p>
+                                    <p id="es" class="mb-4">SPIKAR. Personaje modelado, texturizado y animado en 3DS Max. <a href="https://www.youtube.com/watch?v=MofWF82tcSg">Vídeo de demostración</a></p>
+                                    <p id="en" class="mb-4">SPIKAR. Modeled, texturized and animated character in 3DS Max. <a href="https://www.youtube.com/watch?v=MofWF82tcSg">Demonstration video</a></p>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +334,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Experiencia laboral</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Experiencia laboral</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Work experience</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -306,8 +345,10 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Welme (Trabajo en remoto) - Prácticas curriculares como Unity 3D Developer de una aplicación en desarrollo (2022-Actualidad)</p>
-                                    <p class="mb-4">Leroy Merlín (Leganés, Madrid) - Contrato temporal como reponedor en el departamento de logística durante la campaña de Navidad (2021-2022)</p>
+                                    <p id="es" class="mb-4">Welme (Trabajo en remoto) - Prácticas curriculares como Unity 3D Developer de una aplicación en desarrollo (2022-Actualidad)</p>
+                                    <p id="en" class="mb-4">Welme (Remote work) - Internship as a Unity 3D Developer of an application in development (2022-Present)</p>
+                                    <p id="es" class="mb-4">Leroy Merlín (Leganés, Madrid) - Contrato temporal como reponedor en el departamento de logística durante la campaña de Navidad (2021-2022)</p>
+                                    <p id="en" class="mb-4">Leroy Merlín (Leganés, Madrid) - Temporary job as a stocker in the logistic department during the Christmas campaign (2021-2022)</p>
                                 </div>
                             </div>
                         </div>
@@ -325,7 +366,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Conocimientos y aptitudes</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Conocimientos y aptitudes</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Knowledge and skills</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -337,20 +379,23 @@
                                     <!-- Portfolio Modal - Text-->
                                     <div class="row">
                                         <div class="col-lg-4 ms-auto">
-                                            <p class="mb-4">Lenguajes de programación:</p>
+                                            <p id="es" class="mb-4">Lenguajes de programación:</p>
+                                            <p id="en" class="mb-4">Programming languages:</p>
                                             <p class="mb-4">C#: 8.5/10</p>
                                             <p class="mb-4">Java: 7.5/10</p>
                                             <p class="mb-4">HTML/CSS/JavaScript: 6.5/10</p>
                                             <p class="mb-4">Python: 6/10</p>
                                         </div>
                                         <div class="col-lg-4 me-auto">
-                                            <p class="mb-4">Motores de videojuegos:</p>
+                                            <p id="es" class="mb-4">Motores de videojuegos:</p>
+                                            <p id="en" class="mb-4">Videogames' engines:</p>
                                             <p class="mb-4">Unity: 8/10</p>
                                             <p class="mb-4">Unreal Engine: 7/10</p>
                                             <p class="mb-4">Phaser: 6.5/10</p>
                                         </div>
                                         <div class="col-lg-4 me-auto">
-                                            <p class="mb-4">Otras herramientas:</p>
+                                            <p id="es" class="mb-4">Otras herramientas:</p>
+                                            <p id="en" class="mb-4">Other tools:</p>
                                             <p class="mb-4">3DS Max: 7/10</p>
                                             <p class="mb-4">Adobe Animate: 7/10</p>
                                             <p class="mb-4">Adobe Photoshop: 5.5/10</p>
@@ -373,7 +418,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Otras disciplinas</h2>
+                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Otras disciplinas</h2>
+                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Other disciplines</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -383,8 +429,10 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Permiso de conducir - B (Obtenido en 2022)</p>
-                                    <p class="mb-4">Kárate Shotokan - Cinturón Marrón (Obtenido en 2017)</p>
+                                    <p id="es" class="mb-4">Permiso de conducir - B (Obtenido en 2022)</p>
+                                    <p id="en" class="mb-4">Driving license - B (Achieved in 2022)</p>
+                                    <p id="es" class="mb-4">Kárate Shotokan - Cinturón Marrón (Obtenido en 2017)</p>
+                                    <p id="en" class="mb-4">Shotokan style karate - Brown belt (Achieved in 2017)</p>
                                 </div>
                             </div>
                         </div>
@@ -396,6 +444,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/language.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
