@@ -1,463 +1,376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Portfolio DMC</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <title>David Martínez Costana</title>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Portfolio</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#langbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Idioma/Language
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="langbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a id="es_click" class="nav-link py-3 px-0 px-lg-3 rounded current_lang" type="button">Español</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="en_click" class="nav-link py-3 px-0 px-lg-3 rounded" type="button">English</a></li>
-                    </ul>
-                </div>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Sobre mí</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">About me</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Descripción</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Description</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="es" class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a id="en" class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+
+    <body>
+        <!-- Barra de navegación -->
+        <nav>
+            <h1>DAVID MARTÍNEZ COSTANA</h1>
+            <ul class="navegacion">
+                <li>
+                  <a href="#resumen" class="nav-link spanish">Resumen</a>
+                  <a href="#resumen" class="nav-link english hidden">Summary</a>
+                </li>
+                <li>
+                  <a href="#experiencia" class="nav-link spanish">Experiencia</a>
+                  <a href="#experiencia" class="nav-link english hidden">Experience</a>
+                </li>
+                <li>
+                  <a href="#formacion" class="nav-link spanish">Formación</a>
+                  <a href="#formacion" class="nav-link english hidden">Education</a>
+                </li>
+                <li>
+                  <a href="#proyectos" class="nav-link spanish">Proyectos</a>
+                  <a href="#proyectos" class="nav-link english hidden">Projects</a>
+                </li>
+                <li>
+                  <a href="#aptitudes" class="nav-link spanish">Aptitudes</a>
+                  <a href="#aptitudes" class="nav-link english hidden">Aptitudes</a>
+                </li>
+                <li>
+                  <a href="#contacto" class="nav-link spanish">Contacto</a>
+                  <a href="#contacto" class="nav-link english hidden">Contact</a>
+                </li>
+            </ul>
+            <button class="menu" id="menu">
+                <ion-icon class="barras" name="menu-outline"></ion-icon>
+            </button>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/perfil.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">David Martínez Costana</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0"></p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 id="es" class="page-section-heading text-center text-uppercase text-secondary mb-0">Sobre mí</h2>
-                <h2 id="en" class="page-section-heading text-center text-uppercase text-secondary mb-0">About me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
+
+        <!-- Resumen -->
+        <section class="resumen" id="resumen">
+            <img src="Assets/Perfil/Perfil.png" alt="david-mc" class="about-img" loading="lazy"/>
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-titulo spanish">RESUMEN</h2>
+                <h2 class="bio-titulo english hidden">SUMMARY</h2>
+                <p class="bio-texto spanish">Mi nombre es David Martínez Costana. Actualmente estoy buscando trabajo dentro de la industria de videojuegos. Me gustan mucho los videojuegos, la programación y la animación, entre otras cosas. He desarrollado varios proyectos a lo largo de la carrera como programador, principalmente en Unity y Unreal Engine 5, aunque he manejado también otras herramientas de diseño como 3DS Max. También tengo experiencia en la atención al cliente, la cual he podido adquirir en este último año.</p>
+                <p class="bio-texto english hidden">My name is David Martínez Costana. I am currently searching for a job inside the videogames industry. I really enjoy videogames, programming and animation among other things. I have developed several projects throughout my career as a programmer, mainly in Unity and Unreal Engine 5, although I have also handled some design tools such as 3DS Max. I also have experience in customer assistance, which I was able to acquire during this last year.</p>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 id="es" class="page-section-heading text-center text-uppercase text-white">Descripción general</h2>
-                <h2 id="en" class="page-section-heading text-center text-uppercase text-white">General description</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <p id="es" class="lead">Mi nombre es David Martínez Costana. Actualmente estoy buscando trabajo dentro de la industria de videojuegos. Me gustan mucho los videojuegos, la programación y la animación, entre otras cosas.</p>
-                <p id="en" class="lead">My name is David Martínez Costana. I'm currently looking for a job inside the videogames industry. I really enjoy videogames, programming and animation, among other things.</p>
-                <p id="es" class="lead">He desarrollado varios proyectos a lo largo de la carrera como programador, principalmente en Unity y Unreal Engine 5, aunque he manejado también otras herramientas como Android Studio o Phaser.</p>
-                <p id="en" class="lead">I've developed several projects throughout my career as a programmer, mostly in Unity and Unreal Engine 5, though I have also handled other tools such as Android Studio or Phaser.</p>
-                <p id="es" class="lead">Manejo distintos lenguajes de programación como C# y Java entre otros, así como algunas herramientas de diseño tales como Adobe Animate o 3DS Max.</p>
-                <p id="en" class="lead">I handle several languages like C# and Java, and so some design software tools like Adobe Animate o 3DS Max.</p>
-                <p id="es" class="lead">Siempre trato de mejorar en estos aspectos para poder crecer personal y profesionalmente.</p>
-                <p id="en" class="lead">I always try to improve in these ways in order to grow up personally and professionally.</p>
-                <p id="es" class="lead">Trabajé temporalmente como reponedor en Leroy Merlín y conseguí un contrato de prácticas curriculares en Welme como Unity 3D Developer. Actualmente trabajo como vendedor en Leroy Merlín</p>
-                <p id="en" class="lead">I worked temporarily as a stocker in Leroy Merlín and I managed to get an internship contract as a Unity 3D Developer in Welme. I currently work as a salesman in Leroy Merlin.</p>
+
+        <!-- Experiencia -->
+        <section class="experiencia" id="experiencia">
+          <h2 class="titulo-de-experiencias spanish">EXPERIENCIA</h2>
+          <h2 class="titulo-de-experiencias english hidden">EXPERIENCE</h2>
+          <div class="contenedor-de-experiencias">
+            <div class="contenedor-de-experiencia tarjeta-de-experiencia">
+              <img src="Assets/Experiencia/LeroyMerlin.png" class="imagen-experiencia"/>
+              <h3 class="titulo-de-experiencia spanish">Leroy Merlín - Vendedor de tienda</h3>
+              <h3 class="titulo-de-experiencia english hidden">Leroy Merlín - Store seller</h3>
+              <p class="detalle-de-experiencia spanish">Período: 03/2023-Actualidad</p>
+              <p class="detalle-de-experiencia english hidden">Time: 03/2023-Present</p>
+              <p class="detalle-de-experiencia spanish">Lugar: Palma, Islas Baleares, España</p>
+              <p class="detalle-de-experiencia english hidden">Place: Palma, Balearic Islands, Spain</p>
+              <p class="detalle-de-experiencia spanish">Contrato: Indefinido</p>
+              <p class="detalle-de-experiencia english hidden">Contract: Undefined</p>
             </div>
+            <div class="contenedor-de-experiencia tarjeta-de-experiencia">
+              <img src="Assets/Experiencia/BeActtive.png" class="imagen-experiencia"/>
+              <h3 class="titulo-de-experiencia spanish">BeActtive - Desarrollador Frontend</h3>
+              <h3 class="titulo-de-experiencia english hidden">BeActtive - Frontend Developer</h3>
+              <p class="detalle-de-experiencia spanish">Período: 11/2023-02/2024</p>
+              <p class="detalle-de-experiencia english hidden">Time: 11/2023-02/2024</p>
+              <p class="detalle-de-experiencia spanish">Lugar: Remoto</p>
+              <p class="detalle-de-experiencia english hidden">Place: Remote</p>
+              <p class="detalle-de-experiencia spanish">Contrato: Prácticas</p>
+              <p class="detalle-de-experiencia english hidden">Contract: Internship</p>
+            </div>
+          </div>
+          <div class="contenedor-de-experiencias">
+            <div class="contenedor-de-experiencia tarjeta-de-experiencia">
+              <img src="Assets/Experiencia/Welme.png" class="imagen-experiencia"/>
+              <h3 class="titulo-de-experiencia spanish">Welme - Desarrollador Unity 3D</h3>
+              <h3 class="titulo-de-experiencia english hidden">Welme - Unity 3D Developer</h3>
+              <p class="detalle-de-experiencia spanish">Período: 03/2022-06/2022</p>
+              <p class="detalle-de-experiencia english hidden">Time: 03/2022-06/2022</p>
+              <p class="detalle-de-experiencia spanish">Lugar: Remoto</p>
+              <p class="detalle-de-experiencia english hidden">Place: Remote</p>
+              <p class="detalle-de-experiencia spanish">Contrato: Prácticas</p>
+              <p class="detalle-de-experiencia english hidden">Contract: Internship</p>
+            </div>
+            <div class="contenedor-de-experiencia tarjeta-de-experiencia">
+              <img src="Assets/Experiencia/LeroyMerlin.png" class="imagen-experiencia"/>
+              <h3 class="titulo-de-experiencia spanish">Leroy Merlín - Reponedor</h3>
+              <h3 class="titulo-de-experiencia english hidden">Leroy Merlín - Stocker</h3>
+              <p class="detalle-de-experiencia spanish">Período: 11/2021-01/2022</p>
+              <p class="detalle-de-experiencia english hidden">Time: 11/2021-01/2022</p>
+              <p class="detalle-de-experiencia spanish">Lugar: Leganés, Comunidad de Madrid, España</p>
+              <p class="detalle-de-experiencia english hidden">Place: Leganés, Madrid, Spain</p>
+              <p class="detalle-de-experiencia spanish">Contrato: Temporal</p>
+              <p class="detalle-de-experiencia english hidden">Contract: Temporary</p>
+            </div>
+          </div>
         </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 id="es" class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
-                <h2 id="en" class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
-                            <div id="es" class="text-muted">Teléfono</div>
-                            <div id="en" class="text-muted">Phone</div>
-                            <div class="lead font-weight-bold">(+34) 606 603 714</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
-                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:davidmcmj@gmail.com">davidmcmj@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- Formacion -->
+        <section class="formacion" id="formacion">
+          <h2 class="titulo-de-formaciones spanish">FORMACIÓN</h2>
+          <h2 class="titulo-de-formaciones english hidden">EDUCATION</h2>
+          <div class="contenedor-de-formaciones">
+            <div class="contenedor-de-formacion tarjeta-de-formacion">
+              <img src="Assets/Formacion/The Core School.png" class="imagen-formacion"/>
+              <h3 class="titulo-de-formacion">The Core School</h3>
+              <p class="detalle-de-formacion spanish">Período: 10/2022-06/2023</p>
+              <p class="detalle-de-formacion english hidden">Time: 10/2022-06/2023</p>
+              <p class="detalle-de-formacion spanish">Titulación: Máster en programación de videojuegos</p>
+              <p class="detalle-de-formacion english hidden">Title: Master in videogames programming</p>
+              <p class="detalle-de-formacion spanish">Lugar: Remoto</p>
+              <p class="detalle-de-formacion english hidden">Place: Remote</p>
             </div>
+            <div class="contenedor-de-formacion tarjeta-de-formacion">
+              <img src="Assets/Formacion/URJC.png" class="imagen-formacion"/>
+              <h3 class="titulo-de-formacion">Universidad Rey Juan Carlos</h3>
+              <p class="detalle-de-formacion spanish">Período: 09/2017-01/2023</p>
+              <p class="detalle-de-formacion english hidden">Time: 09/2017-01/2023</p>
+              <p class="detalle-de-formacion spanish">Titulación: Grado en diseño y desarrollo de videojuegos</p>
+              <p class="detalle-de-formacion english hidden">Title: Degree in videogames design and development</p>
+              <p class="detalle-de-formacion spanish">Lugar: Móstoles, Comunidad de Madrid, España</p>
+              <p class="detalle-de-formacion english hidden">Place: Móstoles, Madrid, Spain</p>
+            </div>
+            <div class="contenedor-de-formacion tarjeta-de-formacion">
+              <img src="Assets/Formacion/Attendis.png" class="imagen-formacion"/>
+              <h3 class="titulo-de-formacion">Colegio ECOS, Grupo Attendis</h3>
+              <p class="detalle-de-formacion spanish">Período: 09/2005-06/2017</p>
+              <p class="detalle-de-formacion english hidden">Time: 09/2005-06/2017</p>
+              <p class="detalle-de-formacion spanish">Titulación: Primaria, Secundaria y Bachillerato (Ciencias tecnológicas)</p>
+              <p class="detalle-de-formacion english hidden">Title: Primary, Secondary and High School (Technological sciences)</p>
+              <p class="detalle-de-formacion spanish">Lugar: Marbella, Andalucía, España</p>
+              <p class="detalle-de-formacion english hidden">Place: Marbella, Andalucía, Spain</p>
+            </div>
+          </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 id="es" class="text-uppercase mb-4">Mis redes sociales</h4>
-                        <h4 id="en" class="text-uppercase mb-4">My social media</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/profile.php?id=100007448027664"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/davidmcmj99/"><i class="fab fa-fw fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/davidmcmj"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/david-mart%C3%ADnez-costana-a99b6815a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/deividmcmj"><i class="fab fa-fw fa-github"></i></a>
-                    </div>
-                </div>
+
+        <!-- Proyectos -->
+        <section class="proyectos" id="proyectos">
+          <h2 class="titulo-de-proyectos spanish">PROYECTOS</h2>
+          <h2 class="titulo-de-proyectos english hidden">PROJECTS</h2>
+          <div class="contenedor-de-proyectos">
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/Snake UE5.PNG" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Classics Recreated</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Unreal Engine 5</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Unreal Engine 5</p>
+              <p class="detalle-de-proyecto spanish">Recreación de algunos videojuegos clásicos.</p>
+              <p class="detalle-de-proyecto english hidden">Recreation of some classic videogames.</p>
+              <a href="https://www.youtube.com/watch?v=MaOpMhYf2Vw" class="spanish">Vídeo de Snake</a>
+              <a href="https://www.youtube.com/watch?v=MaOpMhYf2Vw" class="english hidden">Snake video</a>
+              <br>
+              <a href="https://www.youtube.com/watch?v=Qs86VcaogCw" class="spanish">Vídeo de Pong</a>
+              <a href="https://www.youtube.com/watch?v=Qs86VcaogCw" class="english hidden">Pong video</a>
             </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/DarkAge.PNG" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Dark Age</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Unreal Engine 5</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Unreal Engine 5</p>
+              <p class="detalle-de-proyecto spanish">Videojuego de mundo abierto basado en títulos como The Witcher trabajando como programador. Trabajo de Fin de Máster</p>
+              <p class="detalle-de-proyecto english hidden">Open world videogame based in titles such as The Witcher in which I worked as a programmer. Master's Final Thesis</p>
+              <a href="https://www.youtube.com/watch?v=AtD5X3mxUFg" class="spanish">Vídeo de demostración</a>
+              <a href="https://www.youtube.com/watch?v=AtD5X3mxUFg" class="english hidden">Demonstration video</a>
+            </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/TakeAll.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Agarra lo que puedas</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Unity</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Unity</p>
+              <p class="detalle-de-proyecto spanish">Videojuego desarrollado en la Indie Spain Jam (2022) ambientado en un supermercado trabajando como programador.</p>
+              <p class="detalle-de-proyecto english hidden">Videogame developed for the Indie Spain Jam (2022) set in a supermarker working as a programmer.</p>
+              <a href="https://sidneysb.itch.io/takeall" class="spanish">Enlace para probarlo</a>
+              <a href="https://sidneysb.itch.io/takeall" class="english hidden">Test link</a>
+            </div>
+          </div>
+          <div class="contenedor-de-proyectos">
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/TFG.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Branch & Bound Visualization</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Unity</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Unity</p>
+              <p class="detalle-de-proyecto spanish">Simulador que permite visualizar el funcionamiento de los algoritmos de ramificación y poda con 2 problemas de ejemplo. Trabajo de Fin de Grado.</p>
+              <p class="detalle-de-proyecto english hidden">Simulator which allows to visualise how the branch and bound algorithms work with 2 example problems. Degree's Final Thesis.</p>
+              <a href="https://davidmcmj.itch.io/branch-and-bound-visualization" class="spanish">Enlace para probarlo</a>
+              <a href="https://davidmcmj.itch.io/branch-and-bound-visualization" class="english hidden">Test link</a>
+            </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/Eclipse.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Eclipse</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Phaser</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Phaser</p>
+              <p class="detalle-de-proyecto spanish">Videojuego de plataformas desarrollado junto al equipo Centauri Games trabajando como programador.</p>
+              <p class="detalle-de-proyecto english hidden">Platforms videogame developed with the Centauri Games team working as a programmer.</p>
+              <a href="https://centauri-games.itch.io/eclipse" class="spanish">Enlace para probarlo</a>
+              <a href="https://centauri-games.itch.io/eclipse" class="english hidden">Test link</a>
+            </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/SC.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Save Cryptar</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Android Studio</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Android Studio</p>
+              <p class="detalle-de-proyecto spanish">Videojuego de disparos para móviles ambientado en el espacio.</p>
+              <p class="detalle-de-proyecto english hidden">Shooting mobile videogame set in the space.</p>
+              <a href="https://www.youtube.com/watch?v=ZJXXxxbih18" class="spanish">Vídeo de demostración</a>
+              <a href="https://www.youtube.com/watch?v=ZJXXxxbih18" class="english hidden">Demonstration video</a>
+            </div>
+          </div>
+          <div class="contenedor-de-proyectos">
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/EGQ.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Extreme Game Quiz</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Android Studio</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Android Studio</p>
+              <p class="detalle-de-proyecto spanish">Cuestionario para móviles con temática de videojuegos.</p>
+              <p class="detalle-de-proyecto english hidden">Mobile game quiz about videogames.</p>
+              <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ" class="spanish">Vídeo de demostración</a>
+              <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ" class="english hidden">Demonstration video</a>
+            </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/Bathpocalypse.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Bathpocalypse</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: Unity</p>
+              <p class="detalle-de-proyecto english hidden">Environment: Unity</p>
+              <p class="detalle-de-proyecto spanish">Videojuego de disparos desarrollado junto al equipo Centauri Games trabajando como diseñador de interfaces y animador 3D.</p>
+              <p class="detalle-de-proyecto english hidden">Shooting videogame developed with the Centauri Games team working as an interface designer and 3D animator.</p>
+              <a href="https://centauri-games.itch.io/bathpocalypse" class="spanish">Enlace para probarlo</a>
+              <a href="https://centauri-games.itch.io/bathpocalypse" class="english hidden">Test link</a>
+            </div>
+            <div class="contenedor-de-proyecto tarjeta-de-proyecto">
+              <img src="Assets/Proyectos/Spikar.png" class="imagen-proyecto"/>
+              <h3 class="titulo-de-proyecto">Spikar</h3>
+              <p class="detalle-de-proyecto spanish">Entorno: 3DS Max</p>
+              <p class="detalle-de-proyecto english hidden">Environment: 3DS Max</p>
+              <p class="detalle-de-proyecto spanish">Personaje modelado, texturizado y animado.</p>
+              <p class="detalle-de-proyecto english hidden">Character modeled, textured and animated.</p>
+              <a href="https://www.youtube.com/watch?v=MofWF82tcSg" class="spanish">Vídeo de demostración</a>
+              <a href="https://www.youtube.com/watch?v=MofWF82tcSg" class="english hidden">Demonstration video</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Aptitudes -->
+        <section class="aptitudes" id="aptitudes">
+          <h2 class="titulo-de-aptitudes">APTITUDES</h2>
+          <div class="contenedor-de-aptitudes">
+            <div class="contenedor-de-aptitud tarjeta-de-aptitud">
+              <h3 class="titulo-de-aptitud spanish">Idiomas</h3>
+              <h3 class="titulo-de-aptitud english hidden">Languages</h3>
+              <p class="detalle-de-aptitud spanish">Español: Nativo</p>
+              <p class="detalle-de-aptitud english hidden">Spanish: Native</p>
+              <p class="detalle-de-aptitud spanish">Inglés: B2</p>
+              <p class="detalle-de-aptitud english hidden">English: B2</p>
+              <p class="detalle-de-aptitud spanish">Alemán: Principiante</p>
+              <p class="detalle-de-aptitud english hidden">German: Beginner</p>
+            </div>
+            <div class="contenedor-de-aptitud tarjeta-de-aptitud">
+              <h3 class="titulo-de-aptitud spanish">Lenguajes de programación</h3>
+              <h3 class="titulo-de-aptitud english hidden">Programming languages</h3>
+              <p class="detalle-de-aptitud">C#</p>
+              <p class="detalle-de-aptitud">C++</p>
+              <p class="detalle-de-aptitud">Python</p>
+              <p class="detalle-de-aptitud">Java</p>
+              <p class="detalle-de-aptitud">HTML/CSS/JavaScript</p>
+            </div>
+            <div class="contenedor-de-aptitud tarjeta-de-aptitud">
+              <h3 class="titulo-de-aptitud spanish">Motores de videojuegos</h3>
+              <h3 class="titulo-de-aptitud english hidden">Game engines</h3>
+              <p class="detalle-de-aptitud">Unity</p>
+              <p class="detalle-de-aptitud">Unreal Engine 5</p>
+              <p class="detalle-de-aptitud">Godot</p>
+              <p class="detalle-de-aptitud">Phaser</p>
+            </div>
+            <div class="contenedor-de-aptitud tarjeta-de-aptitud">
+              <h3 class="titulo-de-aptitud spanish">Aplicaciones de diseño</h3>
+              <h3 class="titulo-de-aptitud english hidden">Design applications</h3>
+              <p class="detalle-de-aptitud">3DS Max</p>
+              <p class="detalle-de-aptitud">Adobe Animate</p>
+            </div>
+            <div class="contenedor-de-aptitud tarjeta-de-aptitud">
+              <h3 class="titulo-de-aptitud spanish">Otras disciplinas</h3>
+              <h3 class="titulo-de-aptitud english hidden">Other disciplines</h3>
+              <p class="detalle-de-aptitud spanish">Permiso de conducir: B</p>
+              <p class="detalle-de-aptitud english hidden">Driving license: B</p>
+              <p class="detalle-de-aptitud spanish">Atención al cliente</p>
+              <p class="detalle-de-aptitud english hidden">Customer service</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+          <h2 class="spanish">Contacta conmigo</h2>
+          <h2 class="english hidden">Contact me</h2>
+          <div class="formulario-contacto-contenedor">
+            <div class="formulario-contacto">
+              <form action="https://formspree.io/f/xgegyrqr" method="POST">
+                <div class="control-formulario">
+                  <label for="name" class="spanish">Nombre</label>
+                  <label for="name" class="english hidden">Name</label>
+                  <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field spanish" required/>
+                  <input type="text" id="name" name="sender-name" placeholder="Type your name" class="input-field english hidden" required/>
+                </div>
+                <div class="control-formulario">
+                  <label for="email" class="spanish">Correo electrónico</label>
+                  <label for="email" class="english hidden">Email</label>
+                  <input type="email" id="email" name="sender-email" placeholder="Escribe tu correo" class="input-field spanish" required/>
+                  <input type="email" id="email" name="sender-email" placeholder="Type your email" class="input-field english hidden" required/>
+                </div>
+                <div class="control-formulario">
+                  <label for="message" class="spanish">Mensaje</label>
+                  <label for="message" class="english hidden">Message</label>
+                  <textarea id="message" cols="60" rows="10" placeholder="Escribe tu mensaje" name="message" class="input-field spanish" required></textarea>
+                  <textarea id="message" cols="60" rows="10" placeholder="Type your message" name="message" class="input-field english hidden" required></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="submit-btn" class="submit-btn spanish"/>
+                <input type="submit" value="Submit" id="submit-btn" class="submit-btn english hidden"/>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Redes sociales -->
+        <div class="sociales">
+          <a href="https://www.facebook.com/profile.php?id=100007448027664" target="_blank">
+            <img src="Assets/Sociales/Facebook.png" alt="Facebook" loading="lazy" class="socicon"/>
+          </a>
+          <a href="https://www.instagram.com/davidmcmj99/" target="_blank">
+            <img src="Assets/Sociales/Instagram.png" alt="Instagram" loading="lazy" class="socicon"/>
+          </a>
+          <a href="https://twitter.com/davidmcmj" target="_blank">
+            <img src="Assets/Sociales/X.png" alt="X" loading="lazy" class="socicon"/>
+          </a>
+          <a href="https://www.linkedin.com/in/david-mart%C3%ADnez-costana-a99b6815a/" target="_blank">
+            <img src="Assets/Sociales/LinkedIn.png" alt="LinkedIn" loading="lazy" class="socicon"/>
+          </a>
+          <a href="https://github.com/deividmcmj" target="_blank">
+            <img src="Assets/Sociales/GitHub.png" alt="GitHub" loading="lazy" class="socicon"/>
+          </a>
+        </div>
+
+        <!-- Vuelta al principio -->
+        <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+          <img src="Assets/UP.png" class="socicon up-arrow" alt="desplazarse-hacia-arriba"/>
+        </i>
+
+        <!-- Cambio de idioma -->
+        <i class="cambiar-idioma" id="cambiar-idioma" onclick="changeLanguage()">
+          <img id="lang-image" src="Assets/Idiomas/UK.png" class="socicon flag" alt="cambiar-idioma"/>
+        </i>
+
+        <!-- Footer -->
+        <footer>
+          <p class="copy">&copy; Copyright 2024</p>
         </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; David Martínez Costana 2023</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Formación académica</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Academic training</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="es" class="mb-4">The Core School (En remoto) - Máster en Programación de videojuegos (2022-2023)</p>
-                                    <p id="en" class="mb-4">The Core School (Remote) - Videogames programming degree (2022-2023)</p>
-                                    <p id="es" class="mb-4">Universidad Rey Juan Carlos (Móstoles, Madrid) - Grado en Diseño y desarrollo de videojuegos (2017-2022)</p>
-                                    <p id="en" class="mb-4">Rey Juan Carlos University (Móstoles, Madrid) - Videogames design and development degree (2017-2022)</p>
-                                    <p id="es" class="mb-4">Colegio ECOS, Grupo Attendis (Marbella, Málaga) - Educación Primaria, Secundaria y Bachillerato (2005-2017)</p>
-                                    <p id="en" class="mb-4">Colegio ECOS, Grupo Attendis (Marbella, Málaga) - Primary, Secondary and High School Education (2005-2017)</p>
-                                    <p id="es" class="mb-4">Colegio Altaduna, Grupo Attendis (Roquetas de Mar, Almería) - Educación infantil (2003-2005)</p>
-                                    <p id="en" class="mb-4">Colegio Altaduna, Grupo Attendis (Roquetas de Mar, Almería) - Pre-school Education (2003-2005)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Idiomas</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Languages</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="es" class="mb-4">Español - Nativo</p>
-                                    <p id="en" class="mb-4">Spanish - Native</p>
-                                    <p id="es" class="mb-4">Inglés - B2, Intermedio superior (Certificado oficial obtenido en 2021)</p>
-                                    <p id="en" class="mb-4">English - B2, Upper intermediate (Oficial certificate achieved in 2021)</p>
-                                    <p id="es" class="mb-4">Alemán - Principiante (Sin certificado oficial)</p>
-                                    <p id="en" class="mb-4">German - Starter (Without oficial certificate)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Proyectos</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Projects</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="es" class="mb-4">DARK AGE. Videojuego desarrollado en Unreal Engine 5. <a href="https://www.youtube.com/watch?v=AtD5X3mxUFg">Vídeo de demostración</a></p>
-                                    <p id="en" class="mb-4">DARK AGE. Videogame developed in Unreal Engine 5. <a href="https://www.youtube.com/watch?v=AtD5X3mxUFg">Demonstration video</a></p>
-                                    <p id="es" class="mb-4">AGARRA LO QUE PUEDAS. Videojuego desarrollado en Unity para participar en la Indie Spain Jam. <a href="https://sidneysb.itch.io/takeall"> Enlace para descargarlo</a></p>
-                                    <p id="en" class="mb-4">AGARRA LO QUE PUEDAS. Videogame developed in Unity to participate in the Indie Spain Jam. <a href="https://sidneysb.itch.io/takeall"> Link to download it</a></p>
-                                    <p id="es" class="mb-4">BRANCH & BOUND VISUALIZATION. Aplicación desarrollada en Unity para comprender el funcionamiento de los algoritmos de Ramificación y Poda. <a href="https://davidmcmj.itch.io/branch-and-bound-visualization"> Enlace para descargarla</a></p>
-                                    <p id="en" class="mb-4">BRANCH & BOUND VISUALIZATION. Application developed in Unity to understand the functioning of the Branch and Bound algorithms. <a href="https://davidmcmj.itch.io/branch-and-bound-visualization"> Link to download it</a></p>
-                                    <p id="es" class="mb-4">BATHPOCALYPSE. Primer videojuego multijugador desarrollado en Unity. <a href="https://centauri-games.itch.io/bathpocalypse">Enlace para probarlo</a></p>
-                                    <p id="en" class="mb-4">BATHPOCALYPSE. First multiplayer videogame developed in Unity. <a href="https://centauri-games.itch.io/bathpocalypse">Link to try it</a></p>
-                                    <p id="es" class="mb-4">SAVE CRYPTAR. Segundo videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=ZJXXxxbih18">Vídeo de demostración</a></p>
-                                    <p id="en" class="mb-4">SAVE CRYPTAR. Second videogame developed in Android Studio. <a href="https://www.youtube.com/watch?v=ZJXXxxbih18">Demonstration video</a></p>
-                                    <p id="es" class="mb-4">ECLIPSE. Primer videojuego desarrollado en Phaser. <a href="https://centauri-games.itch.io/eclipse">Enlace para probarlo</a></p>
-                                    <p id="en" class="mb-4">ECLIPSE. First videogame developed in Phaser. <a href="https://centauri-games.itch.io/eclipse">Link to try it</a></p>
-                                    <p id="es" class="mb-4">EXTREME GAME QUIZ. Primer videojuego desarrollado en Android Studio. <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ">Vídeo de demostración</a></p>
-                                    <p id="en" class="mb-4">EXTREME GAME QUIZ. First videogame developed in Android Studio. <a href="https://www.youtube.com/watch?v=3IYeWIu5NdQ">Demonstration video</a></p>
-                                    <p id="es" class="mb-4">SPIKAR. Personaje modelado, texturizado y animado en 3DS Max. <a href="https://www.youtube.com/watch?v=MofWF82tcSg">Vídeo de demostración</a></p>
-                                    <p id="en" class="mb-4">SPIKAR. Modeled, texturized and animated character in 3DS Max. <a href="https://www.youtube.com/watch?v=MofWF82tcSg">Demonstration video</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Experiencia laboral</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Work experience</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="es" class="mb-4">Leroy Merlín (Palma, Illes Balears) - Contrato fijo discontinuo como vendedor en la sección de jardín (2023-Actualidad)</p>
-                                    <p id="en" class="mb-4">Leroy Merlín (Palma, Illes Balears) - Discontinuous fixed job as a salesman in the garden section (2023-Present)</p>
-                                    <p id="es" class="mb-4">Welme (Trabajo en remoto) - Prácticas curriculares como Unity 3D Developer de una aplicación en desarrollo (3/2022-6/2022)</p>
-                                    <p id="en" class="mb-4">Welme (Remote work) - Internship as a Unity 3D Developer of an application in development (3/2022-6/2022)</p>
-                                    <p id="es" class="mb-4">Leroy Merlín (Leganés, Madrid) - Contrato temporal como reponedor en el departamento de logística durante la campaña de Navidad (2021-2022)</p>
-                                    <p id="en" class="mb-4">Leroy Merlín (Leganés, Madrid) - Temporary job as a stocker in the logistic department during the Christmas campaign (2021-2022)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Conocimientos y aptitudes</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Knowledge and skills</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <div class="row">
-                                        <div class="col-lg-4 ms-auto">
-                                            <p id="es" class="mb-4">Lenguajes de programación:</p>
-                                            <p id="en" class="mb-4">Programming languages:</p>
-                                            <p class="mb-4">C#: 8.5/10</p>
-                                            <p class="mb-4">Python: 7.5/10</p>
-                                            <p class="mb-4">Java: 7.5/10</p>
-                                            <p class="mb-4">HTML/CSS/JavaScript: 6.5/10</p>
-                                            <p class="mb-4">C++: 6.5/10</p>
-                                        </div>
-                                        <div class="col-lg-4 me-auto">
-                                            <p id="es" class="mb-4">Motores de videojuegos:</p>
-                                            <p id="en" class="mb-4">Videogames' engines:</p>
-                                            <p class="mb-4">Unity: 8/10</p>
-                                            <p class="mb-4">Unreal Engine: 7.5/10</p>
-                                            <p class="mb-4">Phaser: 6.5/10</p>
-                                        </div>
-                                        <div class="col-lg-4 me-auto">
-                                            <p id="es" class="mb-4">Otras herramientas:</p>
-                                            <p id="en" class="mb-4">Other tools:</p>
-                                            <p class="mb-4">3DS Max: 7/10</p>
-                                            <p class="mb-4">Adobe Animate: 7/10</p>
-                                            <p class="mb-4">Adobe Photoshop: 5.5/10</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 id="es" class="portfolio-modal-title text-secondary text-uppercase mb-0">Otras disciplinas</h2>
-                                    <h2 id="en" class="portfolio-modal-title text-secondary text-uppercase mb-0">Other disciplines</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p id="es" class="mb-4">Permiso de conducir - B (Obtenido en 2022)</p>
-                                    <p id="en" class="mb-4">Driving license - B (Achieved in 2022)</p>
-                                    <p id="es" class="mb-4">Kárate Shotokan - Cinturón Marrón (Obtenido en 2017)</p>
-                                    <p id="en" class="mb-4">Shotokan style karate - Brown belt (Achieved in 2017)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <script src="js/language.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script src="app.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
