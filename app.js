@@ -7,9 +7,9 @@ const navLink = document.querySelector(".nav-link");
 let spanishText = document.querySelectorAll(".spanish");
 let englishText = document.querySelectorAll(".english");
 
-let nameForm = document.getElementById("name");
-let emailForm = document.getElementById("email");
-let messageForm = document.getElementById("message");
+let nameForm = document.getElementById("sender-name");
+let emailForm = document.getElementById("sender-email");
+let messageForm = document.getElementById("sender-message");
 let submit = document.getElementById("submit-btn");
 
 let spanish = true;
