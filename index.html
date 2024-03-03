@@ -312,23 +312,19 @@
                 <div class="control-formulario">
                   <label for="name" class="spanish">Nombre</label>
                   <label for="name" class="english hidden">Name</label>
-                  <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field spanish" required/>
-                  <input type="text" id="name" name="sender-name" placeholder="Type your name" class="input-field english hidden" required/>
+                  <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required/>
                 </div>
                 <div class="control-formulario">
                   <label for="email" class="spanish">Correo electrónico</label>
                   <label for="email" class="english hidden">Email</label>
-                  <input type="email" id="email" name="sender-email" placeholder="Escribe tu correo" class="input-field spanish" required/>
-                  <input type="email" id="email" name="sender-email" placeholder="Type your email" class="input-field english hidden" required/>
+                  <input type="email" id="email" name="sender-email" placeholder="Escribe tu correo" class="input-field" required/>
                 </div>
                 <div class="control-formulario">
                   <label for="message" class="spanish">Mensaje</label>
                   <label for="message" class="english hidden">Message</label>
-                  <textarea id="message" cols="60" rows="10" placeholder="Escribe tu mensaje" name="message" class="input-field spanish" required></textarea>
-                  <textarea id="message" cols="60" rows="10" placeholder="Type your message" name="message" class="input-field english hidden" required></textarea>
+                  <textarea id="message" cols="60" rows="10" placeholder="Escribe tu mensaje" name="sender-message" class="input-field" required></textarea>
                 </div>
-                <input type="submit" value="Enviar" id="submit-btn" class="submit-btn spanish"/>
-                <input type="submit" value="Submit" id="submit-btn" class="submit-btn english hidden"/>
+                <input type="submit" name="sender" value="Enviar" id="submit-btn" class="submit-btn"/>
               </form>
             </div>
           </div>
@@ -372,5 +368,7 @@
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>

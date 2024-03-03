@@ -7,6 +7,11 @@ const navLink = document.querySelector(".nav-link");
 let spanishText = document.querySelectorAll(".spanish");
 let englishText = document.querySelectorAll(".english");
 
+let nameForm = document.getElementById("name");
+let emailForm = document.getElementById("email");
+let messageForm = document.getElementById("message");
+let submit = document.getElementById("submit-btn");
+
 let spanish = true;
 
 desplazarArriba.addEventListener("click", () => {
@@ -37,6 +42,11 @@ function changeLanguage()
         {
             spanishText[i].classList.remove("hidden");
             englishText[i].classList.add("hidden");
+
+            nameForm.placeholder = "Escribe tu nombre";
+            emailForm.placeholder = "Escribe tu correo electrónico";
+            messageForm.placeholder = "Escribe tu mensaje";
+            submit.value = "Enviar";
         }
     }
     else
@@ -46,6 +56,11 @@ function changeLanguage()
         {
             spanishText[i].classList.add("hidden");
             englishText[i].classList.remove("hidden");
+
+            nameForm.placeholder = "Type your name";
+            emailForm.placeholder = "Type your email";
+            messageForm.placeholder = "Type your message";
+            submit.value = "Submit";
         }
     }
 }
