@@ -561,6 +561,26 @@ footer
         width: 20.875rem;
     }
 
+    .contenedor-de-formaciones
+    {
+        flex-direction: column;
+    }
+    
+    .contenedor-de-formacion
+    {
+        width: 20.875rem;
+    }
+
+    .contenedor-de-proyectos
+    {
+        flex-direction: column;
+    }
+    
+    .contenedor-de-proyecto
+    {
+        width: 20.875rem;
+    }
+
     .contenedor-de-aptitudes
     {
         flex-direction: column;
